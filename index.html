@@ -9,18 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
 
   <!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/livy.css">
+<link rel="stylesheet" href="assets/css/livy.css" />
+<link rel="stylesheet" href="assets/css/project.css" />
 
 </head>
 <body id="top">
   <!-- HEADER -->
   <header class="header">
     <div class="header-container">
-      <a href="#top" class="logo">OT</a>
+<a href="index.html" class="logo">OT</a>
+
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="#about-section" class="nav-link">About</a></li>
+          <a href="#hero" class="nav-link">About</a>
           <li><a href="#projects-section" class="nav-link">Projects</a></li>
           <li><a href="#contact-section" class="nav-link">Contact</a></li>
         </ul>
@@ -29,7 +31,7 @@
   </header>
 
   <!-- HERO SECTION -->
-  <main class="hero-section">
+  <main id="hero" class="hero-section">
     <div class="container">
       <div class="hero-wrapper">
         <div class="hero-content">
@@ -38,7 +40,7 @@
           <a href="#projects-section" class="view-projects-btn">View Projects</a>
         </div>
         <div class="hero-image-content">
-          <img src="/assets/css/livy.css" alt="Olivia Tang" loading="lazy" />
+          <img src="/assets/images/vector-1738236597548-3410846c8d63.png" alt="Olivia Tang" loading="lazy" />
         </div>
       </div>
     </div>
@@ -58,15 +60,28 @@
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects-section" class="projects-section">
-    <div class="container">
-      <h2 class="projects-title">PROJECTS</h2>
-      <div class="projects-image-wrapper">
-        <img src="assets/images/growthmind project card.png" alt="Analyze" loading="lazy" />
+
+<!-- PROJECTS SECTION -->
+<section id="projects-section" class="projects-section">
+  <div class="container">
+    <h2 class="projects-title">PROJECTS</h2>
+
+    <a href="growthmind.html" class="project-card">
+      <h3 class="project-title">Growth Mindset Project</h3>
+      <div class="project-image-wrapper">
+        <img src="assets/images/growthmind project card - default.png" alt="Growth Mind Default" class="project-img default" />
+        <img src="assets/images/growthmind project card - hover.svg" alt="Growth Mind Hover" class="project-img hover" />
       </div>
-    </div>
-  </section>
+    </a>
+
+    <!-- Add more project cards here -->
+
+  </div>
+</section>
+
+
+
+
 
   <!-- CONTACT SECTION -->
   <section id="contact-section" class="contact-section">
@@ -76,14 +91,15 @@
         Let’s build something together. Email me, or connect via GitHub or LinkedIn.
       </p>
       <div class="contact-btn-group">
-        <a href="mailto:oliviatang.ot@gmail.com" class="contact-btn" aria-label="Email">
-          <img src="assets/icons/email.svg" alt="Email Icon" class="btn-icon" />
-        </a>
+<a href="#" id="email-btn" class="contact-btn" aria-label="Email">
+  <img src="assets/images/email.svg" alt="Email Icon" class="btn-icon" />
+</a>
+
         <a href="https://github.com/livyosa" class="contact-btn" target="_blank" aria-label="GitHub">
-          <img src="assets/icons/github.svg" alt="GitHub Icon" class="btn-icon" />
+          <img src="assets/images/linkedin.svg" alt="GitHub Icon" class="btn-icon" />
         </a>
         <a href="https://linkedin.com/in/oliviatang-ot" class="contact-btn" target="_blank" aria-label="LinkedIn">
-          <img src="assets/icons/linkedin.svg" alt="LinkedIn Icon" class="btn-icon" />
+          <img src="assets/images/git.svg" alt="LinkedIn Icon" class="btn-icon" />
         </a>
       </div>
     </div>
@@ -94,13 +110,31 @@
   <footer class="footer">
     <nav class="footer-navigation">
       <ul class="footer-nav-list">
-        <li><a href="about.html" class="footer-nav-link">About</a></li>
-        <li><a href="projects.html" class="footer-nav-link">Projects</a></li>
-        <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+      <li><a href="#about-section" class="footer-nav-link">About</a></li>
+      <li><a href="#projects-section" class="footer-nav-link">Projects</a></li>
+      <li><a href="#contact-section" class="footer-nav-link">Contact</a></li>
       </ul>
     </nav>
     <p>© 2025 OLIVIA TANG</p>
   </footer>
+
+<!--  Popup form container (hidden by default)
+
+<div id="contact-popup" class="contact-popup">
+  <div class="popup-content">
+    <button id="close-popup" aria-label="Close popup">&times;</button>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div> 
+
+-->
+
+
 
   <!-- External JS -->
   <script src="js/livy.js"></script>

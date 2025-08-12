@@ -27,3 +27,23 @@ if (mainSection) {
 } else {
   console.warn('Main section not found');
 }
+
+
+// email pop up
+
+const emailBtn = document.getElementById('email-btn');
+const popup = document.getElementById('contact-popup');
+const closeBtn = document.getElementById('close-popup');
+
+emailBtn.addEventListener('click', () => {
+  popup.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+// Optional: close popup when clicking outside form
+popup.addEventListener('click', e => {
+  if(e.target === popup) popup.style.display = 'none';
+});
