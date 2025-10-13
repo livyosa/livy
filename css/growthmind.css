@@ -1,0 +1,127 @@
+/* project.css - Growth Mindset page styles */
+
+.project-hero {
+  background-color: #f7f7f7;
+  padding: 4rem 0 6rem 0; /* more bottom padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-hero .hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-hero .hero-content,
+.project-hero .hero-image-content {
+  flex: 1 1 50%;
+  max-width: 750px;
+  min-width: 350px;
+}
+
+/* Responsive stacking */
+@media (max-width: 900px) {
+  .project-hero .hero-content,
+  .project-hero .hero-image-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+.project-hero .hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.project-hero .hero-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.project-hero .hero-image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.main-section {
+  padding: 3rem 0;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+.main-section h2,
+.main-section h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main-section p,
+.main-section ul {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  margin-top: 2rem;
+}
+
+.project-links .view-projects-btn {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-links .view-projects-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.proj-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;  /* Keep aspect ratio */
+  display: block; /* better than flex for img */
+  margin: 0 auto;
+}
+
+/* Bigger, responsive project section */
+.projects-section {
+  padding: 2rem 0;
+  min-height: 80vh;  /* fill vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Bigger project image wrapper */
+.project-image-wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
